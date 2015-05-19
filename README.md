@@ -1,1 +1,1 @@
-# YY&Duowan UI组件库
+# LegoUI for PC
