@@ -1974,38 +1974,38 @@ a.ui-paging__item:hover {
     border: 0 dashed transparent;
     border-width: 6px
 }
-.u-arrow--top {
+.u-arrow.ext-top {
     border-bottom-style: solid;
     border-bottom-color: #666
 }
-.u-arrow--bottom {
+.u-arrow.ext-bottom {
     border-top-style: solid;
     border-top-color: #666
 }
-.u-arrow--left {
+.u-arrow.ext-left {
     border-right-style: solid;
     border-right-color: #666
 }
-.u-arrow--right {
+.u-arrow.ext-right {
     border-left-style: solid;
     border-left-color: #666
 }
-.u-arrow--leftTop {
+.u-arrow.ext-leftTop {
     border-top-style: solid;
     border-top-color: #666;
     border-left-width: 0 !important
 }
-.u-arrow--rightTop {
+.u-arrow.ext-rightTop {
     border-top-style: solid;
     border-top-color: #666;
     border-right-width: 0 !important
 }
-.u-arrow--leftBottom {
+.u-arrow.ext-leftBtm {
     border-bottom-style: solid;
     border-bottom-color: #666;
     border-left-width: 0 !important
 }
-.u-arrow--rightBottom {
+.u-arrow.ext-rightBtm {
     border-bottom-style: solid;
     border-bottom-color: #666;
     border-right-width: 0 !important
