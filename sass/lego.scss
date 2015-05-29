@@ -1,19 +1,13 @@
 @charset "utf-8";
 /*
- *@name:   LegoUI for pc 配置文件
+ *@file:   LegoUI for pc
  *@update: 2015-05-27 16:21:00
  */
- 
-/* 全局配置 */
-$base-font-size          : 12px !default; // 字号
-$base-font-family        : Tahoma, Arial, "Helvetica Neue", Helvetica, sans-serif !default; // 字体族
-$base-line-height        : 1.5 !default; // 行高
 
-
+@import "variable"; // 变量配饰
 @import "mixins";
 @import "base";
 @import "print"; // 打印
-@import "color"; // UI 配色
 
 @import "list"; // 文字列表
 @import "button"; // 按钮
@@ -37,3 +31,4 @@ $base-line-height        : 1.5 !default; // 行高
 @import "ui.marquee"; // 轮播文字条
 
 @import "utility"; // 辅助工具类
+

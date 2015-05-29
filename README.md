@@ -1,8 +1,8 @@
-# LegoUI for pc
+# 开始使用
 
 ---
 
-LegoUI for pc 是一套轻量级的前端UI库，从欢聚时代的实际业务产品需求中精选提取而来的CSS解决方案，旨在像组装LEGO积木一样方便、快捷、灵活的组装成一个web应用。LegoUI使用SASS来组织和书写样式，遵循[YY UED前端规范](https://github.com/duowan/fe-guide)。
+LegoUI for pc 是一套轻量级的前端UI库，从欢聚时代的实际业务产品需求中精选提取而来的CSS解决方案，旨在像组装LEGO积木一样方便、快捷、灵活的组装成一个web应用。LegoUI使用SASS来组织和书写样式，遵循YY UED前端规范。
 
 ---
 
@@ -14,6 +14,7 @@ LegoUI for pc 是一套轻量级的前端UI库，从欢聚时代的实际业务�
 
 <pre>git clone https://github.com/duowan/legoui-pc.git</pre>
 
+<br>
 
 ### 前端构建工具
 
@@ -22,43 +23,30 @@ LegoUI for pc 是一套轻量级的前端UI库，从欢聚时代的实际业务�
 
 ## 包含内容
 
-### 预编译版
+我们提供了编译好的 CSS 文件，还有经过压缩的 CSS 文件，可以直接使用到任何 web 项目中。同时还包含了来自阿里字体库的图标字体。
 
-预编译文件可以直接使用到任何 web 项目中。我们提供了编译好的 CSS 文件，还有经过压缩的 CSS 文件，同时还包含了来自阿里字体库的图标字体。
 
-```html
-├── lego/                           
-│   ├── lego.css                    # 预编译的 CSS 文件
-│   └── lego.min.css                # 压缩版 CSS 文件
-│
-└── font/
-    └── lego/                       # lego 图标字体
-        ├── iconfont.eot
-        ├── iconfont.svg
-        ├── iconfont.ttf
-        ├── iconfont.woff
-        └── iconfont.woff2
 ```
 
-### 开发版
-
-开发版包含LegoUI for pc的所有UI组件的SASS文件和图标字体。
-
-```html
-├── lego/                           # lego SASS 文件
+LegoUI-for-pc
+│
+├── dist/                           
+│   ├── lego.css                    # 预编译的 CSS 文件
+│   └── lego.min.css                # 压缩版 CSS 文件
+│   
+├── sass/                           # LegoUI SASS 文件
 │   ├── lego.scss
 │   ├── base.scss
 │   ├── ...
 │
 ├── font/                           # web 字体
-│   └── lego/                       # lego 图标字体
+│   └── lego/                       # LegoUI 图标字体
 │       ├── iconfont.eot
 │       ├── iconfont.svg
 │       ├── iconfont.ttf
-│       ├── iconfont.woff
-│       └── iconfont.woff2
+│       └── iconfont.woff
 │
-└── README.md                       # lego 说明文档
+└── README.md                       # LegoUI 说明文档
 ```
 
 
