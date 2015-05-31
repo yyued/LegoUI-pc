@@ -257,9 +257,6 @@ a:hover {
     text-decoration: underline;
     color: #f40
 }
-a:focus {
-    outline: none
-}
 img {
     vertical-align: top
 }
