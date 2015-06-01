@@ -14,8 +14,6 @@ LegoUI for pc 是一套轻量级的前端UI库，从欢聚时代的实际业务�
 
 <pre>git clone https://github.com/duowan/legoui-pc.git</pre>
 
-<br>
-
 ### 前端构建工具
 
 如果你正在使用我们的gulp构建工具 [Generator Lego](https://github.com/duowan/generator-lego)，那可以在初始化时使用`yo lego:more`命令，然后选择*LegoUI for pc模板*即可以将LegoUI for pc初始化到你的开发目录了。
