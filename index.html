@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>LegoUI for pc by duowan</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">LegoUI for pc</h1>
+      <h2 class="project-tagline">LegoUI, 一套基于BEM的轻量级前端UI库</h2>
+      <a href="https://github.com/duowan/LegoUI-pc" class="btn">View on GitHub</a>
+      <a href="https://github.com/duowan/LegoUI-pc/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/duowan/LegoUI-pc/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <h1>
+<a id="开始使用" class="anchor" href="#%E5%BC%80%E5%A7%8B%E4%BD%BF%E7%94%A8" aria-hidden="true"><span class="octicon octicon-link"></span></a>开始使用</h1>
+
+<hr>
+
+<p>LegoUI for pc 是一套轻量级的前端UI库，从欢聚时代的实际业务产品需求中精选提取而来的CSS解决方案，旨在像组装LEGO积木一样方便、快捷、灵活的组装成一个web应用。LegoUI使用SASS来组织和书写样式，遵循<a href="https://github.com/duowan/fe-guide">YY UED前端规范</a>。</p>
+
+<hr>
+
+<h2>
+<a id="获取源码" class="anchor" href="#%E8%8E%B7%E5%8F%96%E6%BA%90%E7%A0%81" aria-hidden="true"><span class="octicon octicon-link"></span></a>获取源码</h2>
+
+<h3>
+<a id="git" class="anchor" href="#git" aria-hidden="true"><span class="octicon octicon-link"></span></a>git</h3>
+
+<p>直接clone到本地使用：</p>
+
+<pre>git clone https://github.com/duowan/legoui-pc.git</pre>
+
+<h3>
+<a id="前端构建工具" class="anchor" href="#%E5%89%8D%E7%AB%AF%E6%9E%84%E5%BB%BA%E5%B7%A5%E5%85%B7" aria-hidden="true"><span class="octicon octicon-link"></span></a>前端构建工具</h3>
+
+<p>如果你正在使用我们的gulp构建工具 <a href="https://github.com/duowan/generator-lego">Generator Lego</a>，那可以在初始化时使用<code>yo lego:more</code>命令，然后选择<em>LegoUI for pc模板</em>即可以将LegoUI for pc初始化到你的开发目录了。</p>
+
+<h2>
+<a id="包含内容" class="anchor" href="#%E5%8C%85%E5%90%AB%E5%86%85%E5%AE%B9" aria-hidden="true"><span class="octicon octicon-link"></span></a>包含内容</h2>
+
+<p>我们提供了编译好的 CSS 文件，还有经过压缩的 CSS 文件，可以直接使用到任何 web 项目中。同时还包含了来自阿里字体库的图标字体。</p>
+
+<pre><code>LegoUI-for-pc
+│
+├── dist/                           
+│   ├── lego.css                    # 预编译的 CSS 文件
+│   └── lego.min.css                # 压缩版 CSS 文件
+│   
+├── sass/                           # LegoUI SASS 文件
+│   ├── lego.scss
+│   ├── base.scss
+│   ├── ...
+│
+├── font/                           # web 字体
+│   └── lego/                       # LegoUI 图标字体
+│       ├── iconfont.eot
+│       ├── iconfont.svg
+│       ├── iconfont.ttf
+│       └── iconfont.woff
+│
+└── README.md                       # LegoUI 说明文档
+</code></pre>
+
+<h2>
+<a id="创建一个简单的页面" class="anchor" href="#%E5%88%9B%E5%BB%BA%E4%B8%80%E4%B8%AA%E7%AE%80%E5%8D%95%E7%9A%84%E9%A1%B5%E9%9D%A2" aria-hidden="true"><span class="octicon octicon-link"></span></a>创建一个简单的页面</h2>
+
+<p>这是一个简单的页面模板，直接拷贝然后愉快的使用LegoUI for pc吧：</p>
+
+<div class="highlight highlight-html"><pre>&lt;!DOCTYPE html&gt;
+&lt;<span class="pl-ent">html</span>&gt;
+&lt;<span class="pl-ent">head</span>&gt;
+    &lt;<span class="pl-ent">meta</span> <span class="pl-e">charset</span>=<span class="pl-s"><span class="pl-pds">"</span>UTF-8<span class="pl-pds">"</span></span>&gt;
+    &lt;<span class="pl-ent">meta</span> <span class="pl-e">http-equiv</span>=<span class="pl-s"><span class="pl-pds">"</span>X-UA-Compatible<span class="pl-pds">"</span></span> <span class="pl-e">content</span>=<span class="pl-s"><span class="pl-pds">"</span>IE=edge<span class="pl-pds">"</span></span>&gt;
+    &lt;<span class="pl-ent">meta</span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">"</span>renderer<span class="pl-pds">"</span></span> <span class="pl-e">content</span>=<span class="pl-s"><span class="pl-pds">"</span>webkit<span class="pl-pds">"</span></span>&gt;
+    &lt;<span class="pl-ent">meta</span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">"</span>viewport<span class="pl-pds">"</span></span> <span class="pl-e">content</span>=<span class="pl-s"><span class="pl-pds">"</span>width=device-width, initial-scale=1<span class="pl-pds">"</span></span>&gt;
+    &lt;<span class="pl-ent">meta</span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">"</span>Keywords<span class="pl-pds">"</span></span> <span class="pl-e">content</span>=<span class="pl-s"><span class="pl-pds">"</span><span class="pl-pds">"</span></span>&gt;
+    &lt;<span class="pl-ent">meta</span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">"</span>description<span class="pl-pds">"</span></span> <span class="pl-e">content</span>=<span class="pl-s"><span class="pl-pds">"</span><span class="pl-pds">"</span></span>&gt;
+    &lt;<span class="pl-ent">title</span>&gt;LegoUI&lt;/<span class="pl-ent">title</span>&gt;
+    &lt;<span class="pl-ent">link</span> <span class="pl-e">rel</span>=<span class="pl-s"><span class="pl-pds">"</span>stylesheet<span class="pl-pds">"</span></span> <span class="pl-e">href</span>=<span class="pl-s"><span class="pl-pds">"</span>../css/lego.min.css<span class="pl-pds">"</span></span>&gt;
+    &lt;<span class="pl-ent">link</span> <span class="pl-e">rel</span>=<span class="pl-s"><span class="pl-pds">"</span>stylesheet<span class="pl-pds">"</span></span> <span class="pl-e">href</span>=<span class="pl-s"><span class="pl-pds">"</span>../css/app.css<span class="pl-pds">"</span></span>&gt;
+&lt;/<span class="pl-ent">head</span>&gt;
+&lt;<span class="pl-ent">body</span>&gt;
+    &lt;<span class="pl-ent">p</span>&gt;
+        Hello Lego UI.
+    &lt;/<span class="pl-ent">p</span>&gt;
+
+    <span class="pl-c">&lt;!-- 在这里编写你的代码 --&gt;</span>
+
+&lt;/<span class="pl-ent">body</span>&gt;
+&lt;/<span class="pl-ent">html</span>&gt;</pre></div>
+
+<h2>
+<a id="参考使用的项目" class="anchor" href="#%E5%8F%82%E8%80%83%E4%BD%BF%E7%94%A8%E7%9A%84%E9%A1%B9%E7%9B%AE" aria-hidden="true"><span class="octicon octicon-link"></span></a>参考使用的项目</h2>
+
+<ul>
+<li>
+<a href="https://github.com/seajs/seajs">Sea.js</a> (<a href="https://github.com/seajs/seajs/blob/master/LICENSE.md"> MIT License </a>)</li>
+<li>
+<a href="https://github.com/aralejs/aralejs.org/">Arale</a> (<a href="https://github.com/aralejs/aralejs.org/blob/master/LICENSE"> MIT License </a>)</li>
+<li>
+<a href="https://github.com/necolas/normalize.css">Normalize.css</a> (<a href="https://github.com/necolas/normalize.css/blob/master/LICENSE.md"> MIT License </a>)</li>
+<li>
+<a href="https://github.com/twbs/bootstrap">Bootstrap</a> (<a href="https://github.com/twbs/bootstrap/blob/master/LICENSE"> MIT License </a>)</li>
+<li>
+<a href="https://github.com/aliceui/aliceui.org/">Alice</a> (<a href="https://github.com/aliceui/aliceui.org/blob/master/LICENSE"> MIT License </a>)</li>
+<li>
+<a href="https://github.com/yui/pure">Pure</a> (<a href="https://github.com/yui/pure/blob/master/LICENSE.md"> BSD License </a>)</li>
+<li>
+<a href="https://github.com/thx/cube">Neat.css</a> (<a href="https://github.com/thx/cube/blob/gh-pages/LICENSE"> MIT License </a>)</li>
+</ul>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/duowan/LegoUI-pc">LegoUI for pc</a> is maintained by <a href="https://github.com/duowan">duowan</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
+
