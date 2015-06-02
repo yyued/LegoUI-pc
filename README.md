@@ -34,7 +34,7 @@ LegoUI-for-pc
 │   
 ├── sass/                           # LegoUI SASS 文件
 │   ├── lego.scss
-│   ├── base.scss
+│   ├── _base.scss
 │   ├── ...
 │
 ├── font/                           # web 字体
