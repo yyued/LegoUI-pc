@@ -1125,6 +1125,7 @@ a.ui-figure__bd:hover {
 .ui-figure__caption {
     display: block;
     margin-top: 5px;
+    font-size: 12px;
     font-weight: normal
 }
 .ui-figure.ext-cover .ui-figure__bd {
