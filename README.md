@@ -2,7 +2,7 @@
 
 ---
 
-LegoUI for pc 是一套轻量级的前端UI库，从欢聚时代的实际业务产品需求中精选提取而来的CSS解决方案，旨在像组装LEGO积木一样方便、快捷、灵活的组装成一个web应用。LegoUI使用SASS来组织和书写样式，遵循YY UED前端规范。
+LegoUI for pc 是一套轻量级的前端UI库，从欢聚时代的实际业务产品需求中精选提取而来的CSS解决方案，旨在像组装LEGO积木一样方便、快捷、灵活的组装成一个web应用。LegoUI使用SASS来组织和书写样式，遵循[YY UED前端规范](https://github.com/duowan/fe-guide)。
 
 ---
 
@@ -33,7 +33,7 @@ LegoUI-for-pc
 │   └── lego.min.css                # 压缩版 CSS 文件
 │   
 ├── sass/                           # LegoUI SASS 文件
-│   ├── lego.scss
+│   ├── _lego.scss
 │   ├── _base.scss
 │   ├── ...
 │
