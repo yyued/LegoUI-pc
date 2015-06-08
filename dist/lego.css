@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*!
- * LegoUI for pc v3.0.1 (https://github.com/duowan/legoui-pc)
+ * LegoUI for pc v3.0.2 (https://github.com/duowan/legoui-pc)
  * Copyright 2011-2015 YY, Inc.
  * Licensed under MIT (https://github.com/duowan/legoui-pc/blob/master/LICENSE)
  */
@@ -248,7 +248,7 @@ table {
     border-spacing: 0
 }
 body {
-    font: 12px/1.5 Tahoma, Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font: 12px/1.5 "Helvetica Neue", Helvetica, Tahoma, Arial, sans-serif;
     color: #333;
     background-color: #fff
 }
@@ -258,12 +258,11 @@ a {
 }
 a:hover {
     text-decoration: underline;
-    color: #f40
+    color: #fa0
 }
 img {
     vertical-align: top
 }
-i,
 em {
     font-style: normal
 }
@@ -354,9 +353,9 @@ hr {
 }
 blockquote {
     position: relative;
-    padding-left: 1em;
-    border-left: 1px solid #1abc9c;
-    font-weight: 300;
+    padding: 0 15px;
+    margin: 15px 0;
+    border-left: 4px solid #ddd;
     color: #999
 }
 @media print {
@@ -739,13 +738,12 @@ button.ui-btn {
 }
 .ui-form.ext-multiCol .ui-form__item {
     display: inline-block;
-    vertical-align: middle;
+    vertical-align: top;
     *vertical-align: auto;
     *display: inline;
     zoom: 1;
     letter-spacing: normal;
     word-spacing: normal;
-    vertical-align: top;
     text-rendering: auto;
     padding: 0 0 15px
 }
@@ -1063,7 +1061,7 @@ textarea[readonly] {
 }
 .ui-figure__item {
     display: inline-block;
-    vertical-align: middle;
+    vertical-align: top;
     *vertical-align: auto;
     *display: inline;
     zoom: 1;
@@ -1071,7 +1069,6 @@ textarea[readonly] {
     margin-right: 10px;
     margin-bottom: 10px;
     font-size: 12px;
-    vertical-align: top;
     letter-spacing: normal;
     word-spacing: normal;
     overflow: hidden
@@ -1346,13 +1343,13 @@ a.ui-paging__item:hover {
     *vertical-align: auto;
     *display: inline;
     zoom: 1;
+    white-space: nowrap;
+    word-wrap: normal;
+    word-break: keep-all;
     margin-left: -1px;
     padding: 0 10px;
     line-height: 1.1;
     border-left: 1px solid #ddd;
-    white-space: nowrap;
-    word-wrap: normal;
-    word-break: keep-all;
     color: #999;
     font-size: 12px
 }
@@ -1435,11 +1432,10 @@ a.ui-paging__item:hover {
 }
 .ui-tab__trigger {
     display: inline-block;
-    vertical-align: middle;
+    vertical-align: top;
     *vertical-align: auto;
     *display: inline;
     zoom: 1;
-    vertical-align: top;
     letter-spacing: normal;
     word-spacing: normal;
     margin-right: 3px;
@@ -1447,14 +1443,13 @@ a.ui-paging__item:hover {
     line-height: 32px;
     font-size: 14px;
     border: 1px solid #fff;
-    border-: 1px solid #fff;
     border-bottom: 0;
     background-color: #fff;
     overflow: hidden;
     cursor: pointer
 }
 .ui-tab__trigger.is-active {
-    position: relative;
+    *position: relative;
     margin-bottom: -1px;
     padding-bottom: 1px;
     border-color: #dedede;
@@ -1909,14 +1904,14 @@ a.ui-paging__item:hover {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale
 }
-.u-serif {
-    font-family: Georgia, "Times New Roman", Times, SimSun, serif
+.u-heiti {
+    font-family: "Helvetica Neue", Helvetica, Tahoma, Arial, "Liberation Sans", "Hiragino Sans GB", "Source Han Sans CN", "Source Han Sans SC", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", SimHei, "WenQuanYi Zen Hei Sharp", sans-serif
+}
+.u-songti {
+    font-family: "Helvetica Neue", Helvetica, Tahoma, Arial, SimSun, "TW\-Sung", "WenQuanYi Bitmap Song", "AR PL UMing CN", "AR PL UMing HK", "AR PL UMing TW", "AR PL UMing TW MBE", serif
 }
 .u-monospace {
     font-family: Monaco, Menlo, Consolas, "Courier New", monospace
-}
-.u-yahei {
-    font-family: "Microsoft YaHei", SimHei, "Hiragino Sans GB"
 }
 .u-txtPrimary {
     color: #0097d6
