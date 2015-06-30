@@ -1471,8 +1471,7 @@ a.ui-paging__item:hover {
 }
 .ui-slide__content {
     position: relative;
-    height: 300px;
-    overflow: hidden
+    height: 300px
 }
 .ui-slide__panel {
     position: relative;
