@@ -2451,7 +2451,7 @@ a.ui-paging__item:hover {
  * 字体策略参考：http://zenozeng.github.io/fonts.css/
  */
 .u-heiti {
-  font-family: "PingFang sc", "Helvetica Neue", Helvetica, Tahoma, Arial, "Liberation Sans", "Hiragino Sans GB", "Source Han Sans CN", "Source Han Sans SC", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", SimHei, "WenQuanYi Zen Hei Sharp", sans-serif; }
+  font-family: "PingFang sc", Lantinghei SC, "Helvetica Neue", "Microsoft YaHei", "Hiragino Sans GB", "Microsoft Sans Serif", "Wenquanyi Micro Hei", "ST Heiti", SimHei, sans-serif; }
 
 /*
  * 宋体
